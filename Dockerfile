@@ -8,7 +8,7 @@ RUN apk add --no-cache python3 tzdata && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
     rm -r /root/.cache && \
     pip install https://github.com/sffjunkie/astral/archive/1.10.1.tar.gz && \
-    pip install https://github.com/petermdevries/gw2pvo/releases/download/v1.0-beta1/gw2pvo-1.3.6.tar.gz
+    pip install https://github.com/petermdevries/gw2pvo/releases/download/v1.0-beta2/gw2pvo-1.3.6.tar.gz
 
 ENV GW_STATION_ID="" \
     GW_ACCOUNT="" \
