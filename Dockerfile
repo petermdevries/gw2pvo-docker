@@ -8,7 +8,7 @@ RUN apk add --no-cache python3 tzdata && \
     if [[ ! -e /usr/bin/python ]]; then ln -sf /usr/bin/python3 /usr/bin/python; fi && \
     rm -r /root/.cache && \
     pip install https://github.com/sffjunkie/astral/archive/1.10.1.tar.gz && \
-    pip install https://github.com/markruys/gw2pvo/releases/download/1.3.0/gw2pvo-1.3.0.tar.gz
+    pip install https://github.com/petermdevries/gw2pvo/releases/download/v1.0-beta1/gw2pvo-1.3.6.tar.gz
 
 ENV GW_STATION_ID="" \
     GW_ACCOUNT="" \
@@ -28,7 +28,6 @@ ENTRYPOINT exec gw2pvo \
     --pvo-system-id ${PVO_SYSTEM_ID} \
     --pvo-api-key ${PVO_API_KEY} \
     --pvo-interval ${PVO_INTERVAL} \
-    --darksky-api-key ${DARKSKY_API_KEY} \
     --log ${LOG} \
     --city ${CITY} \
     --skip-offline
