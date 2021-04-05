@@ -19,7 +19,13 @@ ENV GW_STATION_ID="" \
     DARKSKY_API_KEY="" \
     LOG="info" \
     CITY="Amsterdam" \
-    TZ="Europe/Amsterdam"
+    TZ="Europe/Amsterdam" \
+	INFLUX="false" \
+	INFLUX_DATABASE="influxdb" \
+	INFLUX_PORT="80" \
+	INFLUX_MEASUREMENT="PV" \
+	INFLUX_USER="username" \
+	INFLUX_PASSWORD="password"
 
 ENTRYPOINT exec gw2pvo \
     --gw-station-id ${GW_STATION_ID} \
