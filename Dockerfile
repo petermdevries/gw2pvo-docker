@@ -30,4 +30,11 @@ ENTRYPOINT exec gw2pvo \
     --pvo-interval ${PVO_INTERVAL} \
     --log ${LOG} \
     --city ${CITY} \
-    --skip-offline
+    --skip-offline \
+    --influx ${INFLUX} \
+    --influx_database ${INFLUX_DATABASE} \
+    --influx_server ${INFLUX_SERVER} \
+    --influx_port ${INFLUX_PORT} \
+    --influx_measurement ${INFLUX_MEASUREMENT} \
+    --influx_user ${INFLUX_USER} \
+    --influx_password ${INFLUX_PASSWORD}
