@@ -9,7 +9,7 @@ RUN apk add --no-cache python3 tzdata && \
     rm -r /root/.cache && \
     pip install https://github.com/sffjunkie/astral/archive/1.10.1.tar.gz && \
 	pip install influxdb && \
-    pip install https://github.com/petermdevries/gw2pvo/releases/download/v2.0-beta3/gw2pvo-1.3.6.tar.gz
+    pip install https://github.com/petermdevries/gw2pvo/releases/download/v1.0-beta6/gw2pvo-1.3.6.tar.gz
 
 ENV GW_STATION_ID="" \
     GW_ACCOUNT="" \
